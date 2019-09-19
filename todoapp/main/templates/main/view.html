@@ -1,0 +1,11 @@
+{% extends 'main/base.html' %}
+<div></div>
+{% block title %} View {% endblock %}
+<div></div>
+{% block content %}
+<div></div>
+{% for td in user.todolist.all %}
+<p>
+  <a href="/{{ td.id }}">{{ td.name }}</a>
+</p>
+{% endfor %} {% endblock %}
